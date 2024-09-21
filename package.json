@@ -1,0 +1,29 @@
+{
+  "name": "@enricodeleo/cambusa-subscribers",
+  "module": "src/EntitySubscriber.ts",
+  "main": "dist/EntitySubscriber.js",
+  "types": "dist/EntitySubscriber.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun build --target=node ./src/EntitySubscriber.ts --outfile=dist/EntitySubscriber.js && bun run build:declaration",
+    "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
+    "postbuild": "rimraf tsconfig.types.tsbuildinfo"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.5.5",
+    "bun-types": "latest",
+    "rimraf": "^6.0.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  },
+  "files": [
+    "dist/*.js",
+    "dist/*.d.ts"
+  ]
+}
