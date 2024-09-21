@@ -1,8 +1,9 @@
 {
-  "name": "@enricodeleo/cambusa-subscribers",
+  "name": "@cambusa/subscribers",
   "module": "src/EntitySubscriber.ts",
   "main": "dist/EntitySubscriber.js",
   "types": "dist/EntitySubscriber.d.ts",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "build": "bun build --target=node ./src/EntitySubscriber.ts --outfile=dist/EntitySubscriber.js && bun run build:declaration",
