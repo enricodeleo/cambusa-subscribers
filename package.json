@@ -3,8 +3,9 @@
   "module": "src/EntitySubscriber.ts",
   "main": "dist/EntitySubscriber.js",
   "types": "dist/EntitySubscriber.d.ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
+  "private": false,
   "scripts": {
     "build": "bun build --target=node ./src/EntitySubscriber.ts --outfile=dist/EntitySubscriber.js && bun run build:declaration",
     "build:declaration": "tsc --emitDeclarationOnly --project tsconfig.types.json",
@@ -26,5 +27,23 @@
   "files": [
     "dist/*.js",
     "dist/*.d.ts"
-  ]
+  ],
+  "author": "Enrico Deleo <hello@enricodeleo.com>",
+  "keywords": [
+    "typeorm",
+    "subscriber",
+    "cambusa",
+    "broadcast",
+    "typescript",
+    "orm",
+    "event",
+    "database",
+    "real-time"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/enricodeleo/cambusa-subscribers.git"
+  },
+  "license": "MIT",
+  "description": "A TypeORM subscriber module for broadcasting entity lifecycle events to Cambusa."
 }
